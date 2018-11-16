@@ -22,6 +22,15 @@ I trained two separate models to see if I could improve results.  The first mode
 
 Image detection was the theme I wanted to pursue.  The predictive model used, Convolutional Neural Networks, was chosen because they tend to do well on image detection projects.  
 
+Final Model Specs:
+
+Activation:Tanh, Depth:32, Filter(3X3)
+Activation:Tanh, Depth:32, Filter(3X3)
+Activation:Relu, Depth:16, Filter(3X3)
+Activation:Relu, Depth:16, Filter(3X3)
+Activation:Relu, Depth:16, Filter(3X3)
+Flatten Layer
+
 Most models were trained at an image resolution of 64 X 64 or 96 X 96.  An image size greater than 96 takes a prohibitively long time (2+ hours per epoch) to train.  Visually, 96 X 96 is the lowest resolution still detectable to the human eye.
 
 The final model utilized images at 128 by 128, 3 by 3 filters and a slide of 1.  The model consisted of one input layer, four hidden layers and an output layer.  Hyperbolic tangent was used for the first two layers, relu for the next 3 and softmax for categorical prediction.
