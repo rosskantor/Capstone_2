@@ -2,6 +2,8 @@
 
 The ability of a visual detection system to recognize and translate sign language would be a major breakthrough. This system would allow deaf people with limited ability to speak to more easily communicate with individuals with limited understanding of sign language.
 
+The project goal is to develop a model capable of translating American Sign Language (ASL) into British Sign Language (BSL).  The languages spoken in both countries are the same.  The sign languages are not: ASL letters are signed with one hand and BSL is signed with two.
+
 ### Data
 
 The data used for this model was provided by Kaggle:https://www.kaggle.com/grassknoted/asl-alphabet.  Each letter of the alphabet is represented by 3000 training images of similar size, orientation, and resolution (200 X 200).  Surprisingly, the test dataset consists of a single image per letter.
@@ -9,6 +11,10 @@ The data used for this model was provided by Kaggle:https://www.kaggle.com/grass
 The single biggest limitation to a swift solution appears to be computing power.  Model training frequently taxed the processor to 300%.
 
 ![Processor](Processor.png)
+
+### Two Approaches
+
+I trained two separate models to see if I could improve results.  The first model consisted of 3000 unaltered images per letter of the alphabet.  The second tactic was to apply zeroes to all array elements outside of the skin color boundary.
 
 ### Training
 
@@ -52,6 +58,8 @@ I created a second model where all pictures were altered.  Pixel intensity great
 
 What was once a promising model erodes when predicting on the test set proved to be very disappointing when fed the fest set.  Two letters, P and C, were predicted 97 percent of the time.
 
+### Letter Prediction Distribution
+
 ![Letter Distributions](Letter_Dist.png)
 
 ### P
@@ -66,6 +74,8 @@ What was once a promising model erodes when predicting on the test set proved to
 
 * Predict on holdout set sooner.
 * I must have made an error.
+* The image alteration initiative did not appear to be trending in a promising manner.
+* An eight core processor married to a GPU would have help imensely.
 
 ### Future Work
 
