@@ -35,6 +35,7 @@ After numerous training iterations CNN models appeared to crater at around 60 to
 ### The Experiment
 
 Can I improve model results by eliminating all background colors.  This project involved significant effort.  I had to detect the correct threshold to bound on, create new directories, write a program capable of zeroing out all elements not contained in the array and retrain the model.
+
 ![Letter Y at 128](Y128.png)
 
 Below is a distribution of color intensities.  Perhaps if I can black out all non-skin color the model will improve.
