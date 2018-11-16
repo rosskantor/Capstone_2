@@ -75,7 +75,7 @@ What was once a promising model erodes when predicting on the test set proved to
 * Predict on holdout set sooner.
 * I must have made an error.
 * The image alteration initiative did not appear to be trending in a promising manner.
-* An eight core processor married to a GPU would have help imensely.
+* An eight core processor married to a GPU would have help immensely.
 
 ### Future Work
 
