@@ -79,4 +79,4 @@ What was once a promising model erodes when predicting on the test set proved to
 
 ### Future Work
 
-* I may have to abandon this initiative.
+*  I will drastically improve this project in the next two weeks.
