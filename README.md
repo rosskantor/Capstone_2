@@ -24,12 +24,12 @@ Image detection was the theme I wanted to pursue.  The predictive model used, Co
 
 Final Model Specs:
 
-Activation:Tanh, Depth:32, Filter(3X3)
-Activation:Tanh, Depth:32, Filter(3X3)
-Activation:Relu, Depth:16, Filter(3X3)
-Activation:Relu, Depth:16, Filter(3X3)
-Activation:Relu, Depth:16, Filter(3X3)
-Flatten Layer
+* Activation:Tanh, Depth:32, Filter(3X3)
+* Activation:Tanh, Depth:32, Filter(3X3)
+* Activation:Relu, Depth:16, Filter(3X3)
+* Activation:Relu, Depth:16, Filter(3X3)
+* Activation:Relu, Depth:16, Filter(3X3)
+* Flatten Layer
 
 Most models were trained at an image resolution of 64 X 64 or 96 X 96.  An image size greater than 96 takes a prohibitively long time (2+ hours per epoch) to train.  Visually, 96 X 96 is the lowest resolution still detectable to the human eye.
 
