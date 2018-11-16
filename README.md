@@ -28,7 +28,7 @@ After numerous training iterations CNN models appeared to crater at around 60 to
 
 ![128_Accuracy](128_Accuracy.png)
 
-![128_Loss](128 Loss.png)
+![128_Loss](128_Loss.png)
 
 ### The Experiment
 
