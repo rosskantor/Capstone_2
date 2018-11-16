@@ -18,7 +18,7 @@ The single biggest limitation to a swift solution appears to be computing power.
 
 I trained two separate models to see if I could improve results.  The first model consisted of 3000 unaltered images per letter of the alphabet.  The second tactic was to apply zeroes to all array elements outside of the skin color boundary.
 
-### Training
+### Training (CNN Model)
 
 Image detection was the theme I wanted to pursue.  The predictive model used, Convolutional Neural Networks, was chosen because they tend to do well on image detection projects.  
 
