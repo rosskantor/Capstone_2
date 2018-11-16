@@ -24,7 +24,7 @@ Image detection was the theme I wanted to pursue.  The predictive model used, Co
 
 Most models were trained at an image resolution of 64 X 64 or 96 X 96.  An image size greater than 96 takes a prohibitively long time (2+ hours per epoch) to train.  Visually, 96 X 96 is the lowest resolution still detectable to the human eye.
 
-The final model utilized a images at 128 by 128, 3 by 3 filters and a slide of 1.  The model consisted of one input layer, four hidden layers and an output layer.  Hyperbolic tangent was used for the first two layers, relu for the next 3 and softmax for categorical prediction.
+The final model utilized images at 128 by 128, 3 by 3 filters and a slide of 1.  The model consisted of one input layer, four hidden layers and an output layer.  Hyperbolic tangent was used for the first two layers, relu for the next 3 and softmax for categorical prediction.
 
 After numerous training iterations CNN models appeared to crater at around 60 to 65% accuracy.  The two charts detailed below indicate a model stopping after four epochs because validation loss increased.
 
