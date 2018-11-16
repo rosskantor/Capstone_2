@@ -54,8 +54,13 @@ I created a second model where all pictures were altered.  Pixel intensity great
 
 ![Between 25 and 55](25_55_2.png)
 
+Altered Picture Originally Shaded
 
 ![Altered Picture](A371.png)
+
+Altered Picture Not Originally Shaded
+
+![Altered Picture2](A1902.png)
 
 ### Results
 
