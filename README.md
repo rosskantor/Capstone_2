@@ -22,7 +22,7 @@ After numerous training iterations CNN models appeared to crater at around 60 to
 
 ![128_Accuracy](128_Accuracy.png)
 
-![128_Loss](Img Size 128 Loss.png)
+![128_Loss](128 Loss.png)
 
 ### The Experiment
 
@@ -43,7 +43,7 @@ Distribution of color intensities between 170 and 195.
 
 I created a second model where all pictures were altered.  Pixel intensity greater than 85 was set to zero in an effort to remove noise.  Altered images were run through the same model as non altered images.  Unfortunately, the model terminated early because of thermal issues.
 
-![Between 25 and 55](25_55.png)
+![Between 25 and 55](25_55_2.png)
 
 
 ![Altered Picture](A371.png)
