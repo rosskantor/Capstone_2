@@ -4,6 +4,8 @@ The ability of a visual detection system to recognize and translate sign languag
 
 The project goal is to develop a model capable of translating American Sign Language (ASL) into British Sign Language (BSL).  The languages spoken in both countries are the same.  The sign languages are not: ASL letters are signed with one hand and BSL is signed with two.
 
+![BSL](BSL-Right.png)
+source: https://www.british-sign.co.uk/fingerspelling-alphabet-charts/
 ### Data
 
 The data used for this model was provided by Kaggle:https://www.kaggle.com/grassknoted/asl-alphabet.  Each letter of the alphabet is represented by 3000 training images of similar size, orientation, and resolution (200 X 200).  Surprisingly, the test dataset consists of a single image per letter.
