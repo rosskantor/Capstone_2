@@ -1,18 +1,16 @@
-###Sign Language Detection
+### Sign Language Detection
 
 The ability of a visual detection system to recognize and translate sign language would be a major breakthrough. This system would allow deaf people with limited ability to speak to more easily communicate with individuals with limited understanding of sign language.
 
-###Data
+### Data
 
-The data used for this model was provided by Kaggle.  Each letter of the alphabet is represented by 3000 training images of similar size, orientation, and resolution (200 X 200).  Surprisingly, the test dataset consists of a single image per letter.
+The data used for this model was provided by Kaggle:https://www.kaggle.com/grassknoted/asl-alphabet.  Each letter of the alphabet is represented by 3000 training images of similar size, orientation, and resolution (200 X 200).  Surprisingly, the test dataset consists of a single image per letter.
 
 The single biggest limitation to a swift solution appears to be computing power.  Model training frequently taxed the processor to 300%.
 
 ![Processor](Processor.png)
 
-https://www.kaggle.com/grassknoted/asl-alphabet.
-
-###Training
+### Training
 
 Image detection was the theme I wanted to pursue.  The predictive model used, Convolutional Neural Networks, was chosen because they tend to do well on image detection projects.  
 
@@ -28,7 +26,7 @@ After numerous training iterations CNN models appeared to crater at around 60 to
 
 ### The Experiment
 
-Can I improve model results by eliminating all background colors.
+Can I improve model results by eliminating all background colors.  This project involved significant effort.  I had to detect the correct threshold to bound on, create new directories, write a program capable of zeroing out all elements not contained in the array and retrain the model.
 ![Letter Y at 128](Y128.png)
 
 Below is a distribution of color intensities.  Perhaps if I can black out all non-skin color the model will improve.
@@ -44,6 +42,9 @@ Distribution of color intensities between 170 and 195.
 ![Y 128 Between 170 and 195](Y_128_170_195.png)
 
 I created a second model where all pictures were altered.  Pixel intensity greater than 85 was set to zero in an effort to remove noise.  Altered images were run through the same model as non altered images.  Unfortunately, the model terminated early because of thermal issues.
+
+![Between 25 and 55](25_55.png)
+
 
 ![Altered Picture](A371.png)
 
