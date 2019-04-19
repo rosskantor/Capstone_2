@@ -12,7 +12,7 @@ The data used for this model was provided by Kaggle:https://www.kaggle.com/grass
 
 The single biggest limitation to a swift solution appears to be computing power.  Model training frequently taxed the processor to 300%.
 
-![Processor](Processor.png)
+![Processor](Images/Processor.png)
 
 ### Two Approaches
 
@@ -37,39 +37,39 @@ The final model utilized images at 128 by 128, 3 by 3 filters and a slide of 1. 
 
 After numerous training iterations CNN models appeared to crater at around 60 to 65% accuracy.  The two charts detailed below indicate a model stopping after four epochs because validation loss increased.
 
-![128_Accuracy](128_Accuracy.png)
+![128_Accuracy](Images/128_Accuracy.png)
 
-![128_Loss](128_Loss.png)
+![128_Loss](Images/128_Loss.png)
 
 ### The Experiment
 
 Can I improve model results by eliminating all background colors.  This project involved significant effort.  I had to detect the correct threshold to bound on, create new directories, write a program capable of zeroing out all elements not contained in the array and retrain the model.
 
-![Letter Y at 128](Y128.png)
+![Letter Y at 128](Images/Y128.png)
 
 Below is a distribution of color intensities.  Perhaps if I can black out all non-skin color the model will improve.
-![Y 128 Distribution](Y_128_Dist.png)
+![Y 128 Distribution](Images/Y_128_Dist.png)
 
 Distribution of color intensities between 25 and 60.
-![Y 128 Between 25 and 60](Y128_25_60.png)
+![Y 128 Between 25 and 60](Images/Y128_25_60.png)
 
 Distribution of color intensities between 80 and 105.
-![Y 128 Between 80 and 105](Y_128_80_105.png)
+![Y 128 Between 80 and 105](Images/Y_128_80_105.png)
 
 Distribution of color intensities between 170 and 195.
-![Y 128 Between 170 and 195](Y_128_170_195.png)
+![Y 128 Between 170 and 195](Images/Y_128_170_195.png)
 
 I created a second model where all pictures were altered.  Pixel intensity greater than 85 was set to zero in an effort to remove noise.  Altered images were run through the same model as non altered images.  Unfortunately, the model terminated early because of thermal issues.
 
-![Between 25 and 55](25_55_2.png)
+![Between 25 and 55](Images/25_55_2.png)
 
 Altered Picture Originally Shaded
 
-![Altered Picture](A371.png)
+![Altered Picture](Images/A371.png)
 
 Altered Picture Not Originally Shaded
 
-![Altered Picture2](A1902.png)
+![Altered Picture2](Images/A1902.png)
 
 ### Results
 
@@ -77,11 +77,11 @@ What was once a promising model erodes when predicting on the test set proved to
 
 ### Letter Prediction Distribution
 
-![Letter Distributions](Letter_Dist.png)
+![Letter Distributions](Images/Letter_Dist.png)
 
 ### P
 
-![Letter P](P3.png)
+![Letter P](Images/P3.png)
 
 ### C
 
