@@ -96,4 +96,4 @@ What was once a promising model erodes when predicting on the test set proved to
 
 ### Future Work
 
-*  I will drastically improve this project in the next two weeks.
+*  If time permits, I would like to train a model with fewer classes.  Ideally, I would like to select image classes that are visually the least alike.
